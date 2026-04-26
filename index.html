@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pintura Profesional</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/6aab67882e.js" crossorigin="anonymous"></script>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Montserrat',sans-serif;}
+html{scroll-behavior:smooth;}
+body{background:#0b0f14;color:#fff;}
+
+/* NAV */
+header{
+    background:#000;
+    padding:15px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{display:flex;align-items:center;gap:10px;}
+.logo img{width:55px;}
+.logo span b{color:#ff7a00;}
+
+nav a{
+    margin:0 15px;
+    color:#aaa;
+    text-decoration:none;
+}
+nav a:hover{color:#ff7a00;}
+
+/* HERO */
+.hero{display:flex;height:520px;}
+.left{width:60%;padding:80px;}
+.left h1{font-size:65px;font-weight:900;}
+.left h1 span{color:#ff7a00;}
+
+.subzona{
+    margin-top:15px;
+    color:#ccc;
+}
+
+.features{display:flex;gap:40px;margin:30px 0;}
+.feature{text-align:center;}
+.feature i{color:#ff7a00;font-size:28px;}
+
+.btn{
+    background:#25D366;
+    padding:15px 25px;
+    display:inline-block;
+    border-radius:6px;
+    margin-top:20px;
+    color:#fff;
+    text-decoration:none;
+}
+
+.right{
+    width:40%;
+    background:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover;
+    clip-path:polygon(20% 0,100% 0,100% 100%,0 100%);
+}
+
+/* SERVICIOS */
+.services{
+    background:#eee;
+    color:#000;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.services h4{color:#ff7a00;}
+
+.grid{
+    display:flex;
+    overflow-x:auto;
+    gap:10px;
+    margin-top:40px;
+}
+
+.item{
+    min-width:180px;
+    padding:20px;
+    text-align:center;
+    border-right:1px solid #ccc;
+}
+
+.item:last-child{border:none;}
+.item i{color:#ff7a00;font-size:30px;}
+.item p{font-size:13px;color:#555;}
+
+/* SOBRE */
+.about{
+    padding:60px;
+    background:#111;
+}
+
+.about h2{color:#ff7a00;}
+.about li{margin:10px 0;}
+
+/* GALERIA */
+.galeria{
+    padding:60px;
+    text-align:center;
+}
+
+.galeria-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    gap:15px;
+}
+
+.galeria-grid img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.galeria-grid img:hover{
+    transform:scale(1.05);
+}
+
+/* CONTACTO */
+.contacto{
+    background:#eee;
+    color:#000;
+    padding:40px;
+    display:flex;
+    gap:20px;
+}
+
+.box{
+    flex:1;
+    padding:20px;
+    background:#fff;
+}
+
+/* FOOTER */
+footer{
+    background:#000;
+    padding:30px;
+    text-align:center;
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp-float{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:#fff;
+    font-size:24px;
+    padding:15px;
+    border-radius:50%;
+    text-decoration:none;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .hero{flex-direction:column;}
+    .left,.right{width:100%;padding:40px;}
+    .contacto{flex-direction:column;}
+}
+</style>
+</head>
+
+<body id="inicio">
+
+<header>
+    <div class="logo">
+        <img src="https://uploads.onecompiler.io/44m2wzmnf/44m3bc5b8/ChatGPT%20Image%2024%20abr%202026,%2007_01_41%20p.m..png">
+        <span>PINTURA <b>PROFESIONAL</b></span>
+    </div>
+
+    <nav>
+        <a href="#inicio">INICIO</a>
+        <a href="#servicios">SERVICIOS</a>
+        <a href="#sobre">SOBRE MÍ</a>
+        <a href="#galeria">TRABAJOS</a>
+        <a href="#contacto">CONTACTO</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="left">
+        <h1>PINTURA <span>PROFESIONAL</span></h1>
+
+        <p class="subzona">Base en El Pato, Berazategui</p>
+
+        <div class="features">
+            <div class="feature"><i class="fas fa-shield-alt"></i><p>CALIDAD</p></div>
+            <div class="feature"><i class="fas fa-clock"></i><p>PUNTUALIDAD</p></div>
+            <div class="feature"><i class="fas fa-check-circle"></i><p>GARANTÍA</p></div>
+        </div>
+
+        <a href="https://wa.me/5491121669897?text=Hola,%20quiero%20un%20presupuesto" target="_blank" class="btn">
+            ESCRIBIME POR WHATSAPP
+        </a>
+    </div>
+
+    <div class="right"></div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios" class="services">
+    <h4>MIS SERVICIOS</h4>
+    <h2>¿QUÉ PUEDO HACER POR TI?</h2>
+
+    <div class="grid">
+
+        <div class="item">
+            <i class="fas fa-home"></i>
+            <h5>INTERIOR</h5>
+            <p>Pintura de interiores con acabados impecables.</p>
+        </div>
+
+        <div class="item">
+            <i class="fas fa-building"></i>
+            <h5>EXTERIOR</h5>
+            <p>Protección y color para fachadas.</p>
+        </div>
+
+        <div class="item">
+            <i class="fas fa-border-all"></i>
+            <h5>EMPASTADOS</h5>
+            <p>Preparación de paredes perfecta.</p>
+        </div>
+
+        <div class="item">
+            <i class="fas fa-paint-roller"></i>
+            <h5>BARNIZADO</h5>
+            <p>Protección de superficies.</p>
+        </div>
+
+        <div class="item">
+            <i class="fas fa-fill-drip"></i>
+            <h5>TEXTURADO</h5>
+            <p>Diseños únicos.</p>
+        </div>
+
+        <div class="item">
+            <i class="fas fa-door-open"></i>
+            <h5>PUERTAS</h5>
+            <p>Protección y pintura.</p>
+        </div>
+
+        <div class="item">
+            <i class="fas fa-tree"></i>
+            <h5>MADERA</h5>
+            <p>Revestimientos en madera, decks y terminaciones de alta calidad.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="about">
+    <h2>COMPROMISO Y PASIÓN POR LO QUE HAGO</h2>
+    <ul>
+        <li>✔ Atención personalizada</li>
+        <li>✔ Presupuestos sin compromiso</li>
+        <li>✔ Trabajo limpio y ordenado</li>
+        <li>✔ Responsabilidad y confianza</li>
+    </ul>
+</section>
+
+<!-- GALERIA -->
+<section id="galeria" class="galeria">
+    <h2>MIS TRABAJOS</h2>
+
+    <div class="galeria-grid">
+        <img src="https://uploads.onecompiler.io/44m2wzmnf/44m3bc5b8/IMG-20260425-WA0034.jpg">
+        <img src="https://uploads.onecompiler.io/44m2wzmnf/44m3bc5b8/IMG-20260425-WA0043.jpg">
+        <img src="https://uploads.onecompiler.io/44m2wzmnf/44m3bc5b8/IMG-20260425-WA0028~2.jpg">
+        <img src="https://uploads.onecompiler.io/44m2wzmnf/44m3bc5b8/IMG-20260425-WA0041%20(1).jpg">
+        <img src="https://uploads.onecompiler.io/44m2wzmnf/44m3bc5b8/IMG-20260425-WA0053%20(1).jpg">
+    </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="contacto">
+    <div class="box">
+        <h3>UBICACIÓN</h3>
+        <p>El Pato, Berazategui</p>
+    </div>
+
+    <div class="box">
+        <h3>HORARIOS</h3>
+        <p>Lunes a Sábado<br>8:00 a 18:00</p>
+    </div>
+</section>
+
+<footer>
+    DAME <span style="color:#ff7a00;">COLOR</span> A TUS IDEAS
+</footer>
+
+<!-- BOTON FLOTANTE -->
+<a href="https://wa.me/5491121669897?text=Hola,%20quiero%20un%20presupuesto" target="_blank" class="whatsapp-float">
+💬
+</a>
+
+</body>
+</html>
